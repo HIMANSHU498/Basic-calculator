@@ -28,7 +28,8 @@
   margin: 8px 0;
 }
 .row input {
-  font-size: 18px;
+  text-align: end;
+  font-size: 23px;
 
   padding: 10px 10px;
   border: 2px solid black;
