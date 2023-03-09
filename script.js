@@ -8,10 +8,11 @@ Array.from(buttons).forEach((button) => {
     } else if (e.target.innerHTML == "C") {
       string = "";
       document.querySelector("input").value = string;
+    } else if (e.target.innerHTML == "%") {
+      string = string;
+      document.querySelector("input").value = string;
     } else if (e.target.innerHTML == "Back") {
-      for (let i = button.length; i > 0; i--) {
-        string = string[i] - 1;
-      }
+      string = string.slice(0, -1);
       document.querySelector("input").value = string;
     } else {
       string = string + e.target.innerHTML;
